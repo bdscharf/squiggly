@@ -1,0 +1,33 @@
+{
+    "manifest_version": 2,
+    "name": "squiggly",
+    "version": "1.0",
+
+    "description": "a basic enhancement web extension for tildes.net",
+    "homepage_url": "https://github.com/bdscharf/squiggly",
+
+    "icons": {
+        "48": "icons/squiggly-48.png",
+        "96": "icons/squiggly-96.png"
+    },
+
+    "content_scripts": [
+        {
+            "matches": ["*://tildes.net/*"],
+            "js": [ "lib/keypress.js",
+                    "lib/navigate.js",
+                    "lib/vote.js",
+                    "lib/collapse.js",
+                    "lib/external/zenscroll-min.js",
+                    "lib/external/jquery-3.3.1.min.js"
+                ]
+        }
+    ],
+
+    "options_ui": {
+        "page": "options/options.html",
+        "browser_style": true
+    },
+
+    "permissions": ["storage"]
+}
