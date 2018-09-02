@@ -9,7 +9,7 @@ squiggly currently has the following features:
 * Front page:
 	* Navigate through posts using J/K keys to go down/up
 	* Open selected post in new tab using the Enter key
-  * Open selected post comments in new tab using Shift+Enter key
+  	* Open selected post comments in new tab using Shift+Enter key
 	* Vote on selected post using the V key
 * Comments page:
 	* Navigate between comments using J/K keys to go down/up
