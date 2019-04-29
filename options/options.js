@@ -15,8 +15,13 @@ function restoreOptions() {
     console.log(`Error: ${error}`);
   }
 
-  var getting = browser.storage.local.get("color");
-  getting.then(setCurrentChoice, onError);
+  if (chrome) {
+
+  }
+  else {
+    var getting = browser.storage.local.get("color");
+    getting.then(setCurrentChoice, onError);
+  }
 }
 
 document.addEventListener("DOMContentLoaded", restoreOptions);
